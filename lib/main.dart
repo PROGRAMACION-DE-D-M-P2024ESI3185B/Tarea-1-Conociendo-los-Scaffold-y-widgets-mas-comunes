@@ -81,7 +81,7 @@ class _MyWidgetState extends State<MyWidget> {
                     onPressed: () {
                       setState(() {
                         const snackBar = SnackBar(
-                          content: Text('Yay! A SnackBar!'),
+                          content: Text('Profile!'),
                         );
                         ScaffoldMessenger.of(context).showSnackBar(snackBar);
                         boton_accessibility =
@@ -101,6 +101,10 @@ class _MyWidgetState extends State<MyWidget> {
                     color: boton_timer,
                     onPressed: () {
                       setState(() {
+                        const snackBar = SnackBar(
+                          content: Text('Timer!'),
+                        );
+                        ScaffoldMessenger.of(context).showSnackBar(snackBar);
                         boton_timer = boton_timer == Colors.black
                             ? Colors.indigo
                             : Colors.black;
@@ -117,6 +121,10 @@ class _MyWidgetState extends State<MyWidget> {
                     color: boton_phone_android1,
                     onPressed: () {
                       setState(() {
+                        const snackBar = SnackBar(
+                          content: Text('Phone!'),
+                        );
+                        ScaffoldMessenger.of(context).showSnackBar(snackBar);
                         boton_phone_android1 =
                             boton_phone_android1 == Colors.black
                                 ? Colors.indigo
@@ -133,6 +141,10 @@ class _MyWidgetState extends State<MyWidget> {
                     icon: Icon(Icons.phone_android),
                     color: boton_phone_android2,
                     onPressed: () {
+                      const snackBar = SnackBar(
+                        content: Text('Main Phone!'),
+                      );
+                      ScaffoldMessenger.of(context).showSnackBar(snackBar);
                       setState(() {
                         boton_phone_android2 =
                             boton_phone_android2 == Colors.black
